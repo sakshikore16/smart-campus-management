@@ -49,5 +49,7 @@ app.use("/api/meetings", meetingRoutes);
 
 app.get("/api/health", (req, res) => res.json({ ok: true }));
 
+console.log("HI working...");
+
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
